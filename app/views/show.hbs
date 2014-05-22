@@ -1,0 +1,16 @@
+<div class="show-post-wrapper">
+    {{#if post}}
+        <h1 class="show-post-title">{{ post.title }}</h1>
+        <div class="show-post-date">{{ post.createDate }}</div>
+        <div class="show-post-content">{{{ post.contentParsed }}}</div>
+
+        <div class="show-post-action">
+            <a class="btn" href="/p/{{ post.id }}/edit">编辑</a>
+            <a class="btn btn-danger" data-action="deletePost" data-href="/p/{{ post.id }}/delete">删除</a>
+        </div>
+
+    {{ else }}
+        <div>啥都木有</div>
+        <a href="/">返回</a>
+    {{/if}}
+</div>

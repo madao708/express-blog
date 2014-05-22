@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="csrf-token" content="{{ token }}" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-main">
+            <a class="pull-left logo" href="/">回到首页</a>
+
+            <div class="user-links pull-right">
+                <a href="/login">登录</a>
+                <a href="/logout">注销</a>
+                <a href="/new">添加文章</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="body-main">
+            {{{ body }}}
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Powered by express3</p>
+    </div>
+
+</body>
+</html>

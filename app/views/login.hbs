@@ -1,0 +1,21 @@
+<form id="loginForm" method="POST">
+     <input type="hidden"
+            name="_csrf"
+            value="{{ token }}" />
+   
+    <input class="form-input" 
+           type="text"
+           name="username"
+           value=""
+           placeholder="请输入用户名" />
+
+    <input class="form-input text-middle"
+           type="password"
+           name="password"
+           value=""
+           placeholder="请输入密码" />
+
+
+    <button class="btn" id="submitBtn" type="submit">提交</button>
+    <button class="btn" id="cancelBtn">取消</button>
+</form>

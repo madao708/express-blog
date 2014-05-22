@@ -1,0 +1,65 @@
+.form-input,
+.form-textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 5px;
+    color: @color-black;
+    outline: none;
+    border: 1px solid @color-gray;
+    border-radius: 5px;
+
+    &::-webkit-input-placeholder {
+        font-size: @font-size-large;
+        line-height: @form-input-height - 10;
+    }
+
+    &:-moz-placeholder {
+        font-size: @font-size-large;
+        line-height: @form-input-height - 10;
+    }
+
+    &::-moz-placeholder {
+        font-size: @font-size-large;
+        line-height: @form-input-height - 10;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: @font-size-large;
+        line-height: @form-input-height - 10;
+    }
+
+}
+
+.form-input {
+    height: @form-input-height;
+    font-size: @font-size-extra-large;
+    line-height: @font-size-extra-large;
+}
+
+.form-input.text-middle {
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+
+    &::-webkit-input-placeholder {
+        line-height: @line-height-small;
+    }
+
+    &:-moz-placeholder {
+        line-height: @line-height-small;
+    }
+
+    &::-moz-placeholder {
+        line-height: @line-height-small;
+    }
+
+    &:-ms-input-placeholder {
+        line-height: @line-height-small;
+    }
+
+}
+
+.form-textarea {
+    font-size: @font-size-middle;
+    line-height: @line-height-middle;
+}

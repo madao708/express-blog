@@ -1,0 +1,30 @@
+{{#if posts.length}}
+    {{#each posts}}
+    <div class="list-post-wrapper">
+        <h3 class="list-post-title">
+            <a href="/p/{{ this.id }}">{{ this.title }}</a>
+        </h3>
+
+        <p class="list-post-date">{{ this.createDate }}</p>
+
+        <div class="list-post-summary">
+            {{{ this.summary }}} ...
+        </div>
+    </div>
+    {{/each}}
+{{ else }}
+    <p>
+        什么也没有
+    </p>
+{{/if}}
+
+<div class="body-footer">
+    {{#if hasPrevPage }}
+    <a class="pull-left" href="/?page={{ prevPage }}">上一页</a>
+    {{/if}}
+
+    {{#if hasNextPage }}
+    <a class="pull-right" href="/?page={{ nextPage }}">下一页</a>
+    {{/if}}
+</div>
+

@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    padding: 5px 10px;
+    color: @color-black;
+    font-size: @font-size-middle;
+    border: 1px solid @color-gray;
+    border-radius: 5px;
+    background: none;
+
+    &:hover {
+        color: @color-red;
+        cursor: pointer;
+    }
+
+    &.btn-danger {
+        color: white;
+        border-color: @color-red;
+        background: @color-red;
+    }
+}
